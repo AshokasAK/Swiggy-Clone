@@ -1,0 +1,309 @@
+/* .star
+{
+    width: 20px;
+    position: relative;
+    top: 100px;
+} */
+.bodycontainer {
+   margin-top: 1rem;
+   margin-left: 13rem;
+   /* margin-right: 15rem;  */
+   width: 70%;
+}
+
+.fristsug {
+   padding: 10px 10px;
+   margin-top: 1rem;
+}
+
+.move {
+   display: flex;
+   justify-content: space-between;
+   margin-bottom: 1rem;
+}
+
+.move h3 {
+   margin-bottom: 1rem;
+   font-weight: 900;
+   font-size: 24px;
+}
+
+.move .movebuttons {
+   padding: 5px;
+   /* position: fixed; */
+}
+
+.move .movebuttons button {
+   padding: 2px 5px;
+   font-size: 30px;
+   border-radius: 50%;
+   border: none;
+   background-color: rgb(236, 234, 234);
+   margin-right: 5px;
+}
+
+.move .movebuttons button:hover {
+   background-color: rgb(220, 218, 218);
+}
+
+.suggestions {
+   display: flex;
+   align-items: center;
+   overflow: auto;
+   font-weight: 600;
+   color: rgb(92, 91, 91);
+}
+
+.suggestions::-webkit-scrollbar {
+   display: none;
+}
+
+.suggestions .card {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   margin-right: 20px;
+   position: relative;
+}
+
+.suggestions .card img {
+   width: 130px;
+   margin-bottom: .5rem;
+}
+
+.suggestions .card p::first-letter {
+   text-transform: uppercase;
+}
+
+/*FoodItems*/
+
+.menucontainer {
+   margin-bottom: 3rem;
+}
+
+.menucontainer .menucard {
+   display: flex;
+   align-items: center;
+   gap: 30px;
+   overflow: auto;
+}
+
+.menucontainer .menucard::-webkit-scrollbar {
+   display: none;
+}
+
+.menucontainer .menucard .menuitems {
+   display: flex;
+   flex-direction: column;
+   width: 320px;
+
+}
+
+.menucontainer .menucard .menuitems #item {
+   /* background-image: url("../../menu/popcorn.png"); */
+   width: 300px;
+   height: 180px;
+   background-position: center;
+   background-size: cover;
+   border-radius: 20px;
+   margin-bottom: 1.5rem;
+}
+
+.menucontainer .menucard .menuitems #item:hover {
+   transform: scale(.9);
+   transition: transform .2s;
+}
+
+.menucontainer .menucard .menuitems h4 {
+   font-weight: 800;
+   margin-bottom: .5rem;
+   color: black;
+}
+
+
+.menucontainer .menucard .menuitems .ratings {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   width: 45%;
+   margin-bottom: .5rem;
+}
+
+.menucontainer .menucard .menuitems .ratings img {
+   width: 20px;
+}
+
+.menucontainer .menucard .menuitems .ratings h6 {
+   font-size: 15px;
+   font-weight: 400;
+}
+
+.menucontainer .menucard .menuitems .ratings span {
+   width: 4px;
+   height: 4px;
+   background-color: black;
+   border-radius: 50%;
+}
+
+.menucontainer .menucard .menuitems .ratings h5 {
+   font-size: 15px;
+   font-weight: 600;
+
+}
+
+.menucontainer .menucard .menuitems p {
+   /* height: 30px; */
+   /* width: 100%; */
+   font-weight: 600;
+   color: rgb(92, 91, 91);
+}
+
+/*Indicator div*/
+
+.menucontainer .indicatordiv {
+   width: 45px;
+   height: 5px;
+   border-radius: 10px;
+   background-color: rgb(232, 230, 230);
+   position: relative;
+   left: 48%;
+   margin-top: 2rem;
+}
+
+.menucontainer .indicatordiv #indicator {
+   width: 10px;
+   height: 100%;
+   background-color: rgb(255, 48, 7);
+   border-radius: 10px;
+   transform: translateX(0%);
+   transition: all .2s;
+}
+
+
+
+
+/*FilterDiv*/
+.filtercontainer {
+   margin-bottom: 2.5rem;
+}
+
+.filtercontainer h4 {
+   font-weight: 900;
+   font-size: 24px;
+   margin-bottom: 1rem;
+}
+
+.filtercontainer .filters {
+   display: flex;
+   overflow: auto;
+   gap: 15px;
+}
+
+.filtercontainer .filters::-webkit-scrollbar {
+   display: none;
+}
+
+.filtercontainer .filters .filter {
+   background-color: rgb(255, 255, 255);
+   list-style: none;
+   border: 1px solid rgb(173, 171, 171);
+   padding: 5px 15px;
+   border-radius: 20px;
+   display: flex;
+   align-items: center;
+}
+
+.filtercontainer .filters .filter p {
+   font-weight: 600;
+   font-size: 15px;
+   display: flex;
+   justify-content: space-between;
+}
+
+#fill {
+   font-size: 18px;
+   margin-left: -70px;
+}
+
+/*Foods*/
+.foodcontainer {
+   padding: 20px;
+}
+
+
+@media only screen and (min-width:1401px) {
+   .filtercontainer .filters .filter {
+      padding: 10px;
+   }
+
+   .filtercontainer .filters .filter p {
+      width: 128px;
+      text-align: center;
+      font-size: 15px;
+   }
+}
+
+@media only screen and (max-width:1400px) {
+
+   .bodycontainer {
+      margin-left: 6rem;
+      width: 85%;
+   }
+
+   .filtercontainer .filters .filter {
+      margin-left: 20px;
+      padding: 7px 10px;
+   }
+
+   .filtercontainer .filters .filter p {
+      width: 128px;
+      text-align: center;
+      font-size: 15px;
+   }
+
+   .filtercontainer .filters .filter #fill {
+      position: relative;
+      left: -5px;
+   }
+}
+
+@media only screen and (max-width:768px) {
+   .bodycontainer {
+      margin-left: 1rem;
+      width: 95%;
+   }
+
+   .move .movebuttons button {
+      padding: .5px 3px;
+   }
+
+   .suggestions {
+      font-size: 15px;
+   }
+
+   .suggestions .card img {
+      width: 100px;
+   }
+
+   .menucontainer .menucard .menuitems #item {
+      width: 250px;
+      height: 150px;
+      margin-bottom: 1.3rem;
+   }
+
+   .menucontainer .menucard .menuitems .ratings {
+      width: 55%;
+   }
+
+   .filtercontainer .filters .filter {
+      margin-left: 10px;
+      padding: 5px 10px;
+   }
+
+   .filtercontainer .filters .filter p {
+      width: 110;
+      text-align: center;
+      font-size: 14px;
+   }
+}

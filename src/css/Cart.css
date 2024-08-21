@@ -1,0 +1,248 @@
+.cartcontainer {
+  height: 100vh;
+  margin: 50px 10px;
+  padding: 0px 150px;
+  user-select: none;
+}
+
+.cartmarigin {
+  box-shadow: 4px 4px 10px black;
+  padding: 30px 15px;
+  border-radius: 10px;
+}
+
+.top {
+  display: flex;
+  gap: 20px
+}
+
+.image {
+  height: 60px;
+  width: 60px;
+  background-color: rgb(219, 215, 215);
+  border-radius: 5px;
+  box-shadow: 1px 1px 8px black;
+  object-fit: cover;
+}
+
+.topdetails {
+  font-size: 16px;
+  position: relative;
+  line-height: 20px
+}
+
+.topdetails::before {
+  content: '';
+  width: 50px;
+  height: 2px;
+  position: absolute;
+  background-color: black;
+  bottom: 0
+}
+
+.carttitle {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+  padding: 0px 20px;
+  /* width:380px */
+}
+
+.carttitle .cartitemleft {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 14px;
+  width: 220px
+}
+
+.carttitle .cartitemleft .image2 {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+}
+
+.carttitle .carttitleright ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100px;
+  padding: 7px 10px;
+  border: 1.5px solid rgb(171, 170, 170);
+}
+
+.carttitle .carttitleright {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 160px
+}
+
+.carttitle .carttitleright ul li {
+  list-style: none;
+  font-size: 20px;
+}
+
+.carttitle .carttitleright ul li:first-child {
+  color: green
+}
+
+.carttitle .carttitleright ul li:last-child {
+  color: green
+}
+
+.quote {
+  display: flex;
+  margin-top: 2rem;
+  padding: 10px 15px;
+  background-color: rgb(218, 216, 216);
+}
+
+/* .quote p{
+    font-size:35px;
+    position:relative;
+    transform:rotate(180deg)
+  } */
+.quote input {
+  width: 300px;
+  padding: 10px;
+  background-color: transparent;
+  outline: none;
+  border: none
+}
+
+.quote input::placeholder {
+  color: rgb(57, 56, 56);
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.quote input::first-letter {
+  text-transform: uppercase;
+}
+
+.billdetails {
+  margin-top: 2rem;
+  padding: 10px 20px;
+}
+
+.billdetails h4 {
+  font-weight: 600;
+  font-size: 14px;
+  margin-bottom: 1rem;
+}
+
+.billdetails ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+.billdetails ul li {
+  font-size: 13px;
+  font-weight: 400;
+  margin-bottom: .5rem;
+  color: grey;
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+.billdetails .billline {
+  height: 2px;
+  width: 100%;
+  background-color: black;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.billdetails .topay li {
+  font-weight: 700;
+  font-size: 15px;
+  color: black;
+  margin-bottom: -10px;
+}
+
+.totalamnt {
+  margin-top: 2rem;
+  padding: 12px 15px;
+  border: 1px solid rgb(8, 165, 8);
+  background-color: rgb(228, 252, 228);
+  color: rgb(8, 165, 8);
+}
+
+.placeorder {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+.placeorder button {
+  width: 200px;
+  padding: 10px 15px;
+  font-size: 15px;
+  font-weight: 600;
+  color: white;
+  background-color: rgb(19, 189, 19);
+  border: none;
+  border-radius: 5px;
+}
+
+.placeorder button:active {
+  transform: scale(.99);
+  background-color: rgb(16, 117, 16);
+}
+
+@media only screen and (min-width:401px) {
+  .cartcontainer {
+    height: 100vh;
+    margin: 100px 10px;
+    padding: 0px 20px;
+  }
+
+  .cartmarigin {
+    box-shadow: 2px 2px 10px black;
+    padding: 30px 15px;
+  }
+
+  .carttitle .cartitemleft {
+    font-size: 12px;
+    width: 200px
+  }
+}
+
+
+@media only screen and (min-width:750px) {
+  .cartcontainer {
+    height: 100vh;
+    margin: 100px 10px;
+    padding: 0px 150px;
+  }
+
+  .cartmarigin {
+    box-shadow: 2px 2px 10px black;
+    padding: 30px 7px;
+  }
+
+  .carttitle .cartitemleft {
+    font-size: 13px;
+    width: 210px
+  }
+}
+
+@media only screen and (min-width:1200px) {
+  .cartcontainer {
+    height: 100vh;
+    margin: 100px 10px;
+    padding: 0px 360px;
+  }
+
+  .cartmarigin {
+    box-shadow: 2px 2px 10px black;
+    padding: 30px 15px;
+  }
+
+  .carttitle .cartitemleft {
+    font-size: 15px;
+    width: 260px
+  }
+}

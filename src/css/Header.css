@@ -1,0 +1,320 @@
+header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  padding-right: 20px;
+  box-shadow: 1px 1px 10px rgb(191, 188, 188);
+}
+
+.logo {
+  width: 25%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  left: -20px;
+  padding: 10px;
+}
+
+.logo img {
+  width: 100px;
+}
+
+.logo .headertext {
+  font-family: var(--hf), serif;
+  font-weight: 900;
+  width: 100px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo .headertext a {
+  color: var(--nfb);
+}
+
+.logo .headertext a:hover {
+  color: orangered;
+}
+
+.logo .headertext span {
+  transform: rotate(90deg);
+}
+
+.logo .headertext #arrow {
+  transform: scale(.8, 1.5);
+  color: orange;
+}
+
+.nav {
+  width: 60%;
+}
+
+.nav ul {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.nav ul .link {
+  text-decoration: none;
+  color: black;
+}
+
+.hide {
+  display: none;
+}
+
+.nav ul li {
+  list-style: none;
+  margin-left: 1rem;
+  font-weight: 500;
+  color: var(--nfb);
+}
+
+.nav ul .link:hover {
+  color: orangered;
+}
+
+.nav ul li .line {
+  display: flex;
+  align-items: center;
+  /* margin-right: 8px; */
+}
+
+.nav ul li .line .i {
+  margin-right: 10px;
+}
+
+.nav ul li sup {
+  position: relative;
+  top: -10px;
+  font-size: 10px;
+  font-weight: 800;
+  color: orange;
+}
+
+.nav ul li i {
+  margin-right: 8px;
+}
+
+.nav ul li .cart {
+  padding: 2px 6px;
+  margin-right: 5px;
+  border: 2px solid rgb(88, 86, 86);
+  border-radius: 5px;
+}
+
+.nav ul li .cart:hover {
+  color: orangered;
+  border: 2px solid orangered;
+
+}
+
+@media only screen and (max-width:700px) {
+  .logo {
+    width: 35%;
+  }
+
+  .logo .headertext {
+    position: relative;
+    left: -10px;
+  }
+
+  .nav ul .hide,
+  .show {
+    display: none;
+  }
+
+  .nav ul .mobile {
+    display: block;
+  }
+}
+
+
+@media only screen and (min-width:1200px) {
+  header {
+    width: 100%;
+    padding-left: 10%;
+    padding-right: 10%;
+
+  }
+
+  .logo {
+    width: 16%;
+  }
+
+  .nav {
+    width: 70%;
+  }
+
+  .show,
+  .hide {
+    display: block;
+  }
+}
+
+/*Options*/
+
+.swiggycorporate {
+  padding: 0;
+  margin: 0;
+}
+
+.swiggycorporate .aboutswiggy {
+  height: 600px;
+  width: 100%;
+  background-color: orangered;
+  position: relative;
+  top: -110px;
+  padding: 35px 10px;
+  color: white;
+}
+
+.swiggycorporate .aboutswiggy aside {
+  padding: 15px 60px;
+  height: 100px;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 40px;
+  position: fixed;
+  z-index: 1;
+  background-color: orangered;
+}
+
+.swiggycorporate .aboutswiggy aside div {
+  display: flex;
+  align-items: center;
+}
+
+.swiggycorporate .aboutswiggy aside img {
+  width: 90px;
+  filter: brightness(100%);
+  border: none;
+  padding: 10px;
+  border-radius: 10px;
+  margin-right: 20px;
+  background-color: white;
+}
+
+.swiggycorporate .aboutswiggy aside h4 {
+  font-size: 25px;
+  font-weight: 800;
+  color: white;
+}
+
+.swiggycorporate .aboutswiggy aside .list {
+  padding: 0px 10px 0px 10px;
+  width: 70vw;
+  height: 20px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.swiggycorporate .aboutswiggy aside .list li {
+  list-style: none;
+  font-size: 14px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+}
+
+.swiggycorporate .aboutswiggy aside .list ul {
+  width: 200px;
+  position: absolute;
+  top: 31px;
+  left: -50px;
+  transition: all 0.2s ease-in-out;
+  opacity: 0;
+  text-align: center;
+  cursor: pointer;
+}
+
+.swiggycorporate .aboutswiggy aside .list ul li:hover {
+  background-color: rgb(250, 250, 250);
+}
+
+.swiggycorporate .aboutswiggy aside .list li:hover>ul {
+  opacity: 1;
+}
+
+.swiggycorporate .aboutswiggy aside .list li ul li {
+  background-color: rgb(255, 255, 255);
+  padding: 10px;
+  color: black;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.swiggycorporate .aboutswiggy .heart {
+  height: 400px;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: -111;
+  margin-top: 6rem;
+}
+
+.swiggycorporate .aboutswiggy .heart div {
+  width: 60vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  line-height: 2;
+  font-weight: 600;
+}
+
+.swiggycorporate .aboutswiggy .heart div h2 {
+  margin-bottom: 1rem;
+  font-size: 45px;
+}
+
+.swiggycorporate .aboutswiggy .heart div p {
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.aboutswiggy2 {
+  display: flex;
+  justify-content: center;
+}
+
+.aboutswiggy2 ul {
+  width: 80vw;
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 4rem;
+}
+
+.aboutswiggy2 ul li {
+  list-style: none;
+  background-color: white;
+  padding: 15px 30px;
+  border-radius: 50px;
+  border: 1px solid rgb(207, 203, 203);
+}
+
+.aboutswiggy2 ul li:hover {
+  background-color: orangered;
+  color: white;
+}
+
+.aboutswiggy2 ul li:hover>.link {
+  color: white;
+}
+
+.aboutswiggy2 ul li .link {
+  text-decoration: none;
+  font-weight: 800;
+  color: rgb(148, 147, 147);
+  letter-spacing: 1px;
+}
